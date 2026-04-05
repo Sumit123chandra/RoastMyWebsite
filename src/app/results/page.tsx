@@ -30,7 +30,7 @@ const LOADING_STEPS = [
   "Generating your report…",
 ];
 
-export default function ResultsPage() {
+function ResultsInner() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const url = searchParams.get("url") ?? "";
@@ -211,5 +211,21 @@ export default function ResultsPage() {
         </p>
       </div>
     </div>
+  );
+}
+
+import { Suspense } from "react";
+
+export default function ResultsPage() {
+  return (
+    <Suspense fallback={
+      <div className="loading-page">
+        <div className="loading-logo">ROAST<em>MY</em>WEBSITE</div>
+        <div className="loading-fire">🔥</div>
+        <div className="loading-text">Loading…</div>
+      </div>
+    }>
+      <ResultsInner />
+    </Suspense>
   );
 }
