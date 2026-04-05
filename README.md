@@ -2,7 +2,7 @@
 
 > A free AI-powered website audit tool built with Next.js and Google Gemini.
 
-**Live Demo:** [roastmywebsite.vercel.app](https://roastmywebsite.vercel.app) *(update with your URL)*  
+**Live Demo:** [roastmywebsite.vercel.app](https://roast-my-website-murex.vercel.app/) *(update with your URL)*  
 **Built by:** [CodeNest](https://code-nest-taupe.vercel.app) — Web & AI Studio, New Delhi
 
 ---
